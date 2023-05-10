@@ -37,12 +37,12 @@
 ![가보자고 trip](https://github.com/mlulucky/Gabojago/assets/117883588/73e5b94d-0890-4d2a-ad52-38aa86159fc0)
 
 ## 5. 주요 코드
-[trip Controller](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/controller/trip)
-[trip Dto](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/dto/trip)
-[trip Mapper.java](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/mapper/trip)
-[trip Service](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/service/trip)
-[trip Mapper.xml](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/resources/mapper/trip)
-[trip.html](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/resources/templates/trip)
+- [trip Controller](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/controller/trip)
+- [trip Dto](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/dto/trip)
+- [trip Mapper.java](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/mapper/trip)
+- [trip Service](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/java/com/project/gabojago/gabojagouser/service/trip)
+- [trip Mapper.xml](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/resources/mapper/trip)
+- [trip.html](https://github.com/HINZOO/GabojagoUser/tree/trip/src/main/resources/templates/trip)
 
 ## 6. 어려웠던 점 & 해결
 ### 6.1. 메인이미지 등록
@@ -52,8 +52,10 @@
 - 메인이미지 설정은 컨트롤러에서 기존 이미지 배열을 이미지의 개수만큼 반복문을 돌리고, 인덱스가 마지막인 이미지의 상태를 true 로 바꾸고, 배열에 이미지를 추가하는 방식으로 처리할 수 있었습니다.
 
 <details>
-  <summary>코드</summary> 
-  <div>
+<summary>코드</summary> 
+<div markdown="1">
+    
+~~~java
     List<TripImgDto> imgDtos=null;
         if (imgs != null) {
             imgDtos = new ArrayList<>();
@@ -78,8 +80,9 @@
             }
         }
         trip.setImgs(imgDtos);
-  
-  </div>
+
+ ~~~
+</div>
 </details>
 
 
