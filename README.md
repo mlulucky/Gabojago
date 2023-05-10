@@ -1,4 +1,4 @@
-# 📌 GabojagoUser
+# 🧑‍🤝‍🧑 GabojagoUser
 > 여행 일정공유 웹앱서비스 
 
 ## 1. 제작 기간 & 참여 인원
